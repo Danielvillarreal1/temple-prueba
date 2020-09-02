@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {BrowserRouter as Router, Route, Link ,MenuLink} from "react-router-dom";
 const navbar = () => {
     return (  
         <>
@@ -29,7 +29,8 @@ const navbar = () => {
                      {/* Navigation Menu */}
                     <ul class="navigation-menu">
                         <li class="has-submenu">
-                            <a href="index.html#home">Home</a>
+                            {/* <a href="index.html#home">Home</a> */}
+                            <Link to="/"> Home</Link>
                             <span class="menu-arrow"></span>
                             <ul class="submenu">
                                 <li>
@@ -53,10 +54,12 @@ const navbar = () => {
                             </ul>
                         </li>
                         <li class="">
-                            <a href="index.html#features">features</a>
+                            {/* <a href="index.html#features">features</a> */}
+                            <Link to="/feacture"> Feature</Link> 
                         </li>
                         <li class="">
-                            <a href="index.html#pricing">Pricing</a>
+                            {/* <a href="index.html#pricing">Pricing</a> */}
+                            <Link to="/pricing"> Pricing</Link>
                         </li>
                         <li class="has-submenu">
                             <a href="index.html#">Pages</a>
@@ -95,11 +98,13 @@ const navbar = () => {
                             </ul>
                         </li>
                         <li class="">
-                            <a href="contact.html">Contact</a>
+                            {/* <a href="contact.html">Contact</a> */}
+                            <Link to="/contacto"> Contacto</Link>
                         </li>
 
                         <li class="">
-                            <a href="signup.html" >Ubicanos</a>
+                            {/* <a href="signup.html" >Registry</a> */}
+                            <Link to="/registry"> Registry</Link>
                             {/* class="btn-custom btn-rounded" */}
                         </li>
                     </ul>

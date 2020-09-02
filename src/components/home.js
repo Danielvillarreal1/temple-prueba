@@ -3,7 +3,7 @@ import React from 'react';
 const home = () => {
     return ( 
         <>
-        
+            <section class="home-height-half bg-home-1 " id="home">
             <div class="home-center">
                 <div class="home-desc-center">
                     <div class="bg-overlay"></div>
@@ -27,7 +27,7 @@ const home = () => {
                     </div>
                 </div>
             </div>
-        
+            </section>
         
         </>
      );
