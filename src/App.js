@@ -1,10 +1,13 @@
 import React from 'react';
+// import Favicon from 'react-favicon';
+
+import icons from 'react-icons'
 import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
 import './App.css';
 import Navbar from './components/navbar';
 import Home from './components/home';
 import Footer from './components/footer'
-import Contacto from './components/contacto';
+import Contact from './components/contact';
 import Feacture from './components/feacture';
 import Pricing from './components/pricing';
 import Registry from './components/registry'
@@ -47,7 +50,7 @@ function App() {
             <div>
             <Switch>
             
-            <Route path="/" exact> <Home /> </Route>
+            <Route path="/" exact> <Home /> <Footer /></Route>
            
             </Switch>
             <Switch>  
@@ -57,7 +60,7 @@ function App() {
             <Route path="/pricing" exact> <Pricing /> </Route>
             </Switch>
             <Switch>  
-            <Route path="/Contacto"> <Contacto /> </Route>
+            <Route path="/Contact"> <Contact /> </Route>
             </Switch>
             <Switch>
             <Route path="/registry"> <Registry /> </Route>
